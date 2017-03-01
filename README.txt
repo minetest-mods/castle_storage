@@ -11,6 +11,4 @@ see: LICENSE
 
 =-=-=-=-=-=-=-=-=-=
 
-This is a mod all about creating castles and castle dungeons. Many of the nodes are used for the outer-walls or dungeons.
-
-=-=-=-=-=-=-=-=-=-=
+This mod contains a storage crate and an iron-bound chest.
