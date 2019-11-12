@@ -1,9 +1,21 @@
 minetest.register_alias("darkage:box",         "castle_storage:crate")
 minetest.register_alias("castle:crate",         "castle_storage:crate")
 
--- internationalization boilerplate
-local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+
+-- Used for localization, choose either built-in or intllib.
+
+local MP, S, NS = nil
+
+if (minetest.get_modpath("intllib") == nil) then
+	S = minetest.get_translator("castle_storage")
+
+else
+	-- internationalization boilerplate
+	MP = minetest.get_modpath(minetest.get_current_modname())
+	S, NS = dofile(MP.."/intllib.lua")
+
+end
+
 
 minetest.register_node("castle_storage:crate", {
 	description = S("Crate"),

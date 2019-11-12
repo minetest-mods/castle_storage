@@ -1,8 +1,20 @@
 minetest.register_alias("castle:ironbound_chest",         "castle_storage:ironbound_chest")
 
--- internationalization boilerplate
-local MP = minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP.."/intllib.lua")
+
+-- Used for localization, choose either built-in or intllib.
+
+local MP, S, NS = nil
+
+if (minetest.get_modpath("intllib") == nil) then
+	S = minetest.get_translator("castle_storage")
+
+else
+	-- internationalization boilerplate
+	MP = minetest.get_modpath(minetest.get_current_modname())
+	S, NS = dofile(MP.."/intllib.lua")
+
+end
+
 
 local get_ironbound_chest_formspec = function(pos)
 	local spos = pos.x .. "," .. pos.y .. "," ..pos.z

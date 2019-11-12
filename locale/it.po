@@ -24,11 +24,11 @@ msgstr "Cassa"
 
 #: crate.lua:34
 msgid "@1 moves stuff in crate at @2"
-msgstr "@1 mette delle cose nella cassa alle coordinate @2"
+msgstr "@1 sposta delle cose nella cassa alle coordinate @2"
 
 #: crate.lua:37
 msgid "@1 moves stuff to crate at @2"
-msgstr "@1 prende delle cose dalla cassa alle coordinate @2"
+msgstr "@1 mette delle cose dalla cassa alle coordinate @2"
 
 #: crate.lua:40 ironbound_chest.lua:113
 msgid "@1 takes stuff from locked chest at @2"
