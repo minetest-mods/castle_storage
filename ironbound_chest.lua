@@ -103,13 +103,16 @@ minetest.register_node("castle_storage:ironbound_chest",{
 		return stack:get_count()
 	end,
 	on_metadata_inventory_move = function(pos, from_list, from_index, to_list, to_index, count, player)
-		minetest.log("action", S("@1 moves stuff in locked chest at @2", player:get_player_name(), minetest.pos_to_string(pos)))
+		minetest.log("action", S("@1 moves stuff in locked chest at @2",
+			player:get_player_name(), minetest.pos_to_string(pos)))
 	end,
 	on_metadata_inventory_put = function(pos, listname, index, stack, player)
-		minetest.log("action", S("@1 moves stuff to locked chest at @2", player:get_player_name(), minetest.pos_to_string(pos)))
+		minetest.log("action", S("@1 moves stuff to locked chest at @2",
+			player:get_player_name(), minetest.pos_to_string(pos)))
 	end,
 	on_metadata_inventory_take = function(pos, listname, index, stack, player)
-		minetest.log("action", S("@1 takes stuff from locked chest at @2", player:get_player_name(), minetest.pos_to_string(pos)))
+		minetest.log("action", S("@1 takes stuff from locked chest at @2",
+			player:get_player_name(), minetest.pos_to_string(pos)))
 	end,
 	on_rightclick = function(pos, node, clicker)
 		local meta = minetest.get_meta(pos)
