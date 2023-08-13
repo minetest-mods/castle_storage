@@ -1,10 +1,4 @@
 # textdomain: castle_storage
 Crate=
-@1 moves stuff in crate at @2=
-@1 moves stuff to crate at @2=
-@1 takes stuff from locked chest at @2=
 Ironbound Chest=
 Ironbound Chest (owned by @1)=
-@1 tried to access a locked chest belonging to @2 at @3=
-@1 moves stuff in locked chest at @2=
-@1 moves stuff to locked chest at @2=
