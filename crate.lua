@@ -31,13 +31,16 @@ minetest.register_node("castle_storage:crate", {
 		return inv:is_empty("main")
 	end,
 	on_metadata_inventory_move = function(pos, from_list, from_index, to_list, to_index, count, player)
-		minetest.log("action", player:get_player_name() .. " moves stuff in crate at " .. minetest.pos_to_string(pos))
+		minetest.log("action", player:get_player_name() .. " moves stuff in crate at " ..
+			minetest.pos_to_string(pos))
 	end,
 	on_metadata_inventory_put = function(pos, listname, index, stack, player)
-		minetest.log("action", player:get_player_name() .. " moves stuff to crate at " .. minetest.pos_to_string(pos))
+		minetest.log("action", player:get_player_name() .. " moves stuff to crate at " ..
+			minetest.pos_to_string(pos))
 	end,
 	on_metadata_inventory_take = function(pos, listname, index, stack, player)
-		minetest.log("action", player:get_player_name() .. " takes stuff from locked chest at " .. minetest.pos_to_string(pos))
+		minetest.log("action", player:get_player_name() .. " takes stuff from locked chest at " ..
+			minetest.pos_to_string(pos))
 	end,
 })
 
